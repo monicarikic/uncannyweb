@@ -80,7 +80,7 @@ var TEXT_H =8;
 var TEXT_PADDING = 3;
 var TEXT_LEADING = TEXT_H + 4;
 
-var LOGO_FILE = "00_Portada.png";
+var LOGO_FILE = "portada.png";
 var MENU_BG_FILE = "menu_white.png";
 
 //how long does the text bubble stay
@@ -317,7 +317,7 @@ function preload() {
     menuBg = loadImage(ASSETS_FOLDER + MENU_BG_FILE);
     arrowButton = loadImage(ASSETS_FOLDER + "arrowButton.png");
 
-    var logoSheet = loadSpriteSheet(ASSETS_FOLDER + LOGO_FILE, 128, 100, 1);
+    var logoSheet = loadSpriteSheet(ASSETS_FOLDER + LOGO_FILE, 256, 200, 6);
     logo = loadAnimation(logoSheet);
     logo.frameDelay = 10;
 

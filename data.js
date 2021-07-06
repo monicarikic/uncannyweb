@@ -90,12 +90,12 @@ module.exports.ROOMS = {
             //url: uptionally open a page on click
             h00ff00: {
                 cmd: "text",
-                txt: "Créditos",
+                txt: "Haz click para mas informacion",
                 align: "left",
-                lines: 4,
-                url: "/textos/creditos/",
+                lines: 1,
+				url: "creditos.html",
                 label: "Créditos",
-                point: [18, 93],
+                point: [37, 94],
                 obstacle: true
             },
         },
@@ -172,45 +172,77 @@ module.exports.ROOMS = {
             //align: center or left
             //lines: manual number of lines, p5 doesn't understand line breaks
             //url: uptionally open a page on click
-            hff00ff: {
+            hffe200: {
                 cmd: "text",
-                txt: "Videos de expertos",
+                txt: "Aquí puedes leer información sobre el proyecto.",
                 align: "left",
-                lines: 4,
-                url: "/textos/videos-de-expertos",
-                label: "Videos de expertos",
+                lines: 2,
+                url: "uncannyfire.html",
+                label: "Información",
                 point: [96, 78],
                 obstacle: true
             },
-            h00cc99: {
+            h5cff00: {
                 cmd: "text",
-                txt: "Videojuegos: los dos lados de la pantalla - texto curatorial",
+                txt: "INSIDE THE LARPS THAT LET HUMAN PLAYERS EXPERIENCE AI LIFE\n\nGame designers are using artificial intelligence to explore everything from racial discrimination to cathartic emotion.\n\nTasha Robinson, 2019",
                 align: "left",
-                lines: 5,
-                url: "/textos/texto-curatorial/",
-                label: "Texto curatorial",
-                point: [97, 75],
+                lines: 10,
+                url: "https://www.theverge.com/2019/2/1/18185945/live-action-roleplaying-larp-game-design-artificial-intelligence-ethics-issues",
+                label: "Ser otro, ser máquina",
+                point: [22, 75],
                 obstacle: true
             },
 
-            h0066ff: {
+            hff4bff: {
                 cmd: "text",
-                txt: "La relevancia del videojuego",
-                align: "left",
-                lines: 4,
-                url: "/textos/introduccion",
-                label: "La relevancia del videojuego",
-                point: [26, 77],
+                txt: "ON THE MACHINE CONDITION AND ITS CREATIVE EXPRESSION\n\n[...]We present a framework for machines to creatively express their existence, sketch some aspects of the machine condition, and describe potential benefits of this approach.\n\nSimon Colton, Alison Pease, Christian Guckelsberger, Jon McCormack y Teresa Llano. 2020",
+				align: "left",
+                lines: 14,
+                url: "https://acris.aalto.fi/ws/portalfiles/portal/51479962/Colton_et_al_Machine_Condition_ICCC20.pdf",
+                label: "Conidición maquínica",
+                point: [43, 77],
                 obstacle: true
             },
-            hff9900: {
+            hff6600: {
                 cmd: "text",
-                txt: "Infografias",
+                txt: "Link3",
                 align: "left",
                 lines: 4,
                 url: " /textos/infografias",
-                label: "Infografias",
-                point: [26, 77],
+                label: "Link 3",
+                point: [75, 77],
+                obstacle: true
+            },
+			
+            h7100a7: {
+                cmd: "text",
+                txt: "¿Cotillean los robots? Proyecto inicial de esta misma serie de narrativas, donde se imaginan las posibles interacciones sociales futuras entre los robots.",
+                align: "left",
+                lines: 5,
+                url: "https://monicarikic.com/data-gossiping-robots/",
+                label: "Data Gossiping Robots, 2018",
+                point: [22, 75],
+                obstacle: true
+            },
+
+            h004300: {
+                cmd: "text",
+                txt: "Proyecto de esta misma serie en el que empecé a imaginar máquinas con crisis existenciales.",
+                align: "left",
+                lines: 3,
+                url: "https://monicarikic.com/new-home-of-mind/",
+                label: "New Home of Mind, 2020",
+                point: [43, 77],
+                obstacle: true
+            },
+            hfe2301: {
+                cmd: "text",
+                txt: "Proyecto de esta misma serie en el que se cuestiona si la máquinas conscientes deben o no ser creativas, a través de un pequeño robot blando con síndrome del impostor.",
+                align: "left",
+                lines: 6,
+                url: "https://monicarikic.com/new-home-of-mind/",
+                label: "La computadora que quería ser incomputable, 2021",
+                point: [75, 77],
                 obstacle: true
             },
         },
@@ -274,10 +306,10 @@ module.exports.ROOMS = {
             },
             h00ff00: {
                 cmd: "text",
-                txt: "Controles jugables: Line wobbler + Perfect woman",
+                txt: "Identifícate con la máquina",
                 align: "left",
                 lines: 2,
-                url: "/textos/controles-jugables",
+                url: "https://monicarikic.com/identificacion/",
                 label: "Interactivo",
                 point: [31, 85],
                 obstacle: true
@@ -346,10 +378,10 @@ module.exports.ROOMS = {
             },
             hffee00: {
                 cmd: "text",
-                txt: "Controles jugables: Line wobbler + Perfect woman",
+                txt: "Habla con la máquina",
                 align: "left",
                 lines: 2,
-                url: "/textos/controles-jugables",
+                url: "/chatbot",
                 label: "Interactivo",
                 point: [95, 91],
                 obstacle: true
@@ -415,10 +447,10 @@ module.exports.ROOMS = {
 
             h00ff00: {
                 cmd: "text",
-                txt: "interactivo",
+                txt: "en construcción",
                 align: "left",
                 lines: 4,
-                url: "/textos/texto-sala-inspiracion",
+              
                 label: "Interactivo",
                 point: [53, 80],
                 obstacle: true
@@ -488,10 +520,10 @@ module.exports.ROOMS = {
                 cmd: "text",
 
 
-                txt: "Scott Pilgrim",
+                txt: "Crea junto a la máquina",
                 align: "left",
                 lines: 2,
-                url: "/textos/scott-pilgrim",
+                url: "pinta.html",
                 label: "Interactivo",
 
                 point: [82, 82],
