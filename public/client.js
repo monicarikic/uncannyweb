@@ -2058,6 +2058,16 @@ function canvasReleased() {
 					masterVolume(0);
 					video.innerHTML ='<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/570980356?autoplay=1&color=ffffff&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>';
 					modal.style.display = "block";
+
+}else if(longTextLink=="video5"){
+					masterVolume(0);
+					video.innerHTML ='<div style="padding:56.25% 0 0 0;position:relative;"><iframe style="position:absolute;top:0;left:0;width:100%;height:100%;"  src="https://www.youtube.com/embed/bOXS6BVbFCg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>';
+					modal.style.display = "block";
+
+}else if(longTextLink=="video6"){
+					masterVolume(0);
+					video.innerHTML ='<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/111576518?autoplay=1&color=ffffff&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>';
+					modal.style.display = "block";
 				}else
 	            if (longTextLink != "")
 	                window.open(longTextLink, "_blank");

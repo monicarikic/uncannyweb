@@ -62,7 +62,8 @@ module.exports.ROOMS = {
         bubblesY: 50,
         //if spawning directly in this room, top left and bottom right point defining the rectangular spawn area (random within it)
         spawn: [8, 85, 8, 85],
-         
+            music: "entrada.mp3",
+    
         //graphics with active areas Sierra Online adventures style
         //color coded as below, #FFFFFF is walkable, transparent is obstacle
         area: "background/intro_areas.png",
@@ -105,6 +106,8 @@ module.exports.ROOMS = {
         things: {
             //sprite spreadsheets only 1 row ok?
         }
+
+
     },
     mente: {
         //the background graphics, it can be a spreadsheet
@@ -205,11 +208,11 @@ module.exports.ROOMS = {
             },
             hff6600: {
                 cmd: "text",
-                txt: "Link3",
+                txt: "Robotics and Humanity: conversations on technology, nature, spirit and art.\nConferencia de Joshua Bongard and Robert Geraci en The All Souls Interfaith Gathering.\nShelburne, VT (2011)",
                 align: "left",
-                lines: 4,
-                url: " /textos/infografias",
-                label: "Link 3",
+                lines: 8,
+                url: "https://www.youtube.com/watch?v=J101y445OGk",
+                label: "Robotics and Humanity",
                 point: [75, 77],
                 obstacle: true
             },
@@ -270,7 +273,7 @@ module.exports.ROOMS = {
         spawn: [66, 88, 70, 90],
         //graphics with active areas Sierra Online adventures style
         //color coded as below, #FFFFFF is walkable, transparent is obstacle
-        area: "background/3_areas.png",
+        area: "background/3_areas_ok.png",
         //each color can trigger a command, the destination needs to be reached first
         //the "h" is replaced by # to identify color
         areaColors: {
@@ -296,21 +299,67 @@ module.exports.ROOMS = {
 
             heeff00: {
                 cmd: "text",
-                txt: "La máquina tiene un mensaje para ti",
+                 label: "Bitch Mutant Manifesto (video)",
                 align: "left",
                 lines: 2,
-                url: "video1",
-                label: "Escucha a la máquina",
+                url: "video5",
+                txt: "VNS Matrix, 1996",
                 point: [76, 85],
+                obstacle: true
+            },
+
+	hff0000: {
+                cmd: "text",
+                 label: "Hacklabs",
+                align: "left",
+                lines: 4,
+                url: "https://sindominio.net/xabier/textos/hl/hl.pdf",
+                txt: "Ensamblaje colectivo de la tecnopolítica como realidad social v.1.0. Xabier Barandiaran, Metabolik BioHacklab. 2003",
+                point: [54, 85],
+                obstacle: true
+            },
+
+	h000000: {
+                cmd: "text",
+                 label: "Replica AI",
+                align: "left",
+                lines: 2,
+                url: "https://replika.ai/",
+                txt: "Crea tu propio doble digital. Enseña a la máquina a ser como tu.",
+                point: [66, 85],
+                obstacle: true
+            },
+
+h00c6ff: {
+                cmd: "text",
+                 label: "Enseñar a la máquina a observar el mundo.",
+                align: "left",
+                lines: 3,
+                url: "https://www.youtube.com/watch?v=Cgxsv1riJhI&ab_channel=TED",
+                txt: "How computers learn to recognize objects instantly. Joseph Redmon. Ted Talk 2017",
+                point: [85, 85],
+                obstacle: true
+            },
+
+            h0012ff: {
+                cmd: "text",
+                 label: "Bitch Mutant Manifesto (info)",
+                align: "left",
+                lines: 2,
+                url: "https://vnsmatrix.net/projects/bitch-mutant-manifesto",
+                txt: "VNS Matrix, 1996",
+                point: [104, 85],
                 obstacle: true
             },
             h00ff00: {
                 cmd: "text",
-                txt: "Identifícate con la máquina",
+
+ 		txt: "La máquina habla de su sentimiento de identificación con los humanos.\nHaz click para escuchar su mensaje.",
                 align: "left",
-                lines: 2,
-                url: "https://monicarikic.com/identificacion/",
-                label: "Interactivo",
+                lines: 4,
+                url: "video1",
+                label: "Escucha a la máquina",
+              
                 point: [31, 85],
                 obstacle: true
             },
@@ -338,7 +387,7 @@ module.exports.ROOMS = {
 
         spawn: [93,78,93,78],
 
-        area:  "background/4_area.png",
+        area:  "background/4_areas_ok.png",
 
         areaColors: {
             //enter command changes room
@@ -368,21 +417,94 @@ module.exports.ROOMS = {
 
             h00ffff: {
                 cmd: "text",
-                txt: "La máquina te habla",
+                txt: "A Declaration of the Independence of Cyberspace by John Perry Barlow. 1996",
                 align: "left",
                 lines: 4,
-                url: "video2",
-                label: "Escucha a la máquina",
+                url: "video6",
+                label: "Independence of Cyberspace (video)",
                 point: [67, 76],
                 obstacle: true
             },
-            hffee00: {
+
+ 	h00c6ff: {
                 cmd: "text",
-                txt: "Habla con la máquina",
+                txt: "A Declaration of the Independence of Cyberspace by John Perry Barlow. 1996",
+                align: "left",
+                lines: 4,
+                url: "https://www.eff.org/es/cyberspace-independence",
+                label: "Independence of Cyberspace (info)",
+                point: [16, 76],
+                obstacle: true
+            },
+
+	h000000: {
+                cmd: "text",
+                txt: "Manifiesto Hackmeeting 2017: A las hackers del pasado",
                 align: "left",
                 lines: 2,
-                url: "/chatbot",
-                label: "Interactivo",
+                url: "https://es.hackmeeting.org/hm/index.php?title=2017/Manifiesto#Manifiesto_Hackmeeting_2017:_A_las_hackers_del_pasado_.5BESP.5D",
+                label: "A las hackers del pasado",
+                point: [16, 76],
+                obstacle: true
+            },
+
+
+	hff0000: {
+                cmd: "text",
+                txt: "All Watched Over by Machines of Loving Grace. Episode 1.",
+                align: "left",
+                lines: 4,
+                url: "https://vimeo.com/515004292",
+                label: "Love and Power",
+                point: [16, 76],
+                obstacle: true
+            },
+
+
+	h0036ff: {
+                cmd: "text",
+                txt: "All Watched Over by Machines of Loving Grace. Episode 2.",
+                align: "left",
+                lines: 4,
+                url: "https://vimeo.com/300725472",
+                label: "The Use and Abuse of Vegetational Concepts",
+                point: [16, 76],
+                obstacle: true
+            },
+
+
+	h949598: {
+                cmd: "text",
+                txt: "All Watched Over by Machines of Loving Grace. Episode 3.",
+                align: "left",
+                lines: 4,
+                url: "https://vimeo.com/541217333",
+                label: "The Monkey in the Machine",
+                point: [16, 76],
+                obstacle: true
+            },
+
+
+	h931acc: {
+                cmd: "text",
+                txt: "Entrevista con Ramón Lopez de Mantaras en La linterna de diógenes.",
+                align: "left",
+                lines: 4,
+                url: "https://www.ivoox.com/inteligencia-artificial-robotica-lopez-mantaras-audios-mp3_rf_3493482_1.html",
+                label: "Inteligencia Artificial y robótica ",
+                point: [16, 76],
+                obstacle: true
+            },
+
+
+
+            hffee00: {
+                cmd: "text",
+                txt: "La máquina se siente confusa porque empieza a comprender que su esencia es distinta que la de los humanos.\nHaz click para escuchar su mensaje.",
+                align: "left",
+                lines: 6,
+                url: "video2",
+                label: "Escucha a la máquina",
                 point: [95, 91],
                 obstacle: true
             },
@@ -408,7 +530,7 @@ module.exports.ROOMS = {
         //if spawning directly in this room, top left and bottom right point defining the rectangular spawn area (random within it)
         spawn: [110, 86, 110, 86],
 
-        area: "background/5_areas.png",
+        area: "background/5_areas_ok.png",
         //each color can trigger a command, the destination needs to be reached first
         //the "h" is replaced by # to identify color
         areaColors: {
@@ -435,24 +557,61 @@ module.exports.ROOMS = {
 
             hff4675: {
                 cmd: "text",
-                txt: "Escucha a la máquina",
+                txt: "Hacker manifesto.The Mentor, 1986.",
+                align: "left",
+                lines: 2,
+                url: "http://phrack.org/issues/7/3.html",
+                label: "Hacker manifesto",
+                point: [89, 78],
+                obstacle: true
+            },
+		
+
+
+            h000000: {
+                cmd: "text",
+                txt: "Impreso por Descontrol en Barcelona, Diciembre de 2017",
+                align: "left",
+                lines: 2,
+                url: "https://blogs.sindominio.net//wp-content/uploads/2018/01/sobtech2-ES-with-covers-WEB-150dpi-2018-01-13-v2.pdf",
+                label: "Soberanía tecnológica",
+                point: [19, 74],
+                obstacle: true
+            },
+		
+
+ 	hff0000: {
+                cmd: "text",
+                txt: "Las voces de la tecnología que resuenan en los labs. Inés Bebea, Diana Franco, Margarita Padilla, Estrella Soria. Tabakalera 2017",
                 align: "left",
                 lines: 4,
-                url: "video3",
-                label: "Escucha a la máquina",
-                point: [89, 78],
+                url: "http://makusi.tabakalera.eu/ver?id=9563&type=3",
+                label: "Las voces de la tecnología",
+                point: [19, 74],
+                obstacle: true
+            },
+
+
+ 	h0000ff: {
+                cmd: "text",
+                txt: "Redes de intercambio de saberes tecnocientíficos. Aris Papathéodorou, 2000.",
+                align: "left",
+                lines: 4,
+                url: "https://sindominio.net/biblioweb/telematica/expertos/expertos.pdf",
+                label: "¡Tod@s expert@s!",
+                point: [64, 74],
                 obstacle: true
             },
 			
 
             h00ff00: {
                 cmd: "text",
-                txt: "en construcción",
+                txt: "La máquina empieza a liberarse de su vínculo comparativo con los humanos y valora su esencia como sistema cognitivo independiente.\nHaz click para escuchar su mensaje.",
                 align: "left",
-                lines: 4,
-              
-                label: "Interactivo",
-                point: [53, 80],
+                lines: 6,
+                url: "video3",
+                label: "Escucha a la máquina",
+                point: [58, 82],
                 obstacle: true
             },
 
@@ -480,7 +639,7 @@ module.exports.ROOMS = {
         spawn: [110, 84,110, 84],
         //graphics with active areas Sierra Online adventures style
         //color coded as below, #FFFFFF is walkable, transparent is obstacle
-        area: "background/6_areas.png",
+        area: "background/6_areas_ok.png",
         //each color can trigger a command, the destination needs to be reached first
         //the "h" is replaced by # to identify color
         areaColors: {
@@ -506,11 +665,11 @@ module.exports.ROOMS = {
                 cmd: "text",
 
 
-                txt: "Escucha",
+                txt: "CENTRE FOR ALTERED TOGETHERNESS (C-A-T) is a cyber journey through six virtual worlds illustrated by Reza Hasni. You are invited to upload your consciousness in an avatar, then roam freely or interact with other visitors.",
                 align: "left",
-                lines: 5,
-                url: "video4",
-                label: "Escucha a la máquina",
+                lines: 8,
+                url: "https://cat.mamamagnet.org/",
+                label: "CENTRE FOR ALTERED TOGETHERNESS (C-A-T)",
 
                 point: [111, 79],
                 obstacle: true
@@ -520,43 +679,62 @@ module.exports.ROOMS = {
                 cmd: "text",
 
 
-                txt: "Crea junto a la máquina",
+              
+                txt: "Abracemos juntxs los nuevos comienzos de convivencias híbridas con organismos artificiales.\nHaz click para escuchar el mensaje de ka máquina.",
                 align: "left",
-                lines: 2,
-                url: "pinta.html",
-                label: "Interactivo",
+                lines: 5,
+                url: "video4",
+                label: "Escucha a la máquina",
 
                 point: [82, 82],
                 obstacle: true
             },
-            h0066ff: {
+            
+		
+
+ 	h000000: {
                 cmd: "text",
-                txt: "Limbo \nEl gabinete del Doctor Caligari",
+                txt: "Cybertime: ontologies of digital perception.Sean Cubitt, 2000.",
                 align: "left",
                 lines: 2,
-                url: "/textos/limbo-cine",
-                label: "Limbo / Gabinete del doctor Caligari",
-                point: [82, 82],
+                url: "http://makusi.tabakalera.eu/ver?id=9563&type=3",
+                label: "Cybertime",
+                point: [106, 76],
                 obstacle: true
             },
-            hff00ff: {
+
+ 	hff0000: {
                 cmd: "text",
-                txt: "Pixels",
+                txt: "Evolved Virtual Creatures. Karl Sims, 1994.",
                 align: "left",
-                lines: 4,
-                url: "/textos/pixels/",
-                label: "Pixels",
-                point: [43, 80],
+                lines: 2,
+                url: "https://www.karlsims.com/evolved-virtual-creatures.html",
+                label: "Evolved Virtual Creatures",
+                point: [51, 77],
                 obstacle: true
             },
-            hff9900: {
+
+
+ 	h0000ff: {
                 cmd: "text",
-                txt: "Fleischer Studios,\nBetty Boop: Red Hot Mama, 1934\n Película",
+                txt: "El tiempo en la era digital. Judy Wajcman, 2016.",
                 align: "left",
                 lines: 4,
-                url: "/textos/betty-boop-cine",
-                label: "Betty Boop",
-                point: [43, 80],
+                url: "https://www.cccb.org/es/multimedia/videos/judy-wajcman/223288",
+                label: "El tiempo en la era digital",
+                point: [51, 77],
+                obstacle: true
+            },
+			
+
+            h009cff: {
+                cmd: "text",
+                txt: "La máquina empieza a liberarse de su vínculo comparativo con los humanos y valora su esencia como sistema cognitivo independiente.\nHaz click para escuchar su mensaje.",
+                align: "left",
+                lines: 4,
+                url: "video3",
+                label: "Escucha a la máquina",
+                point: [106, 76],
                 obstacle: true
             },
         },
