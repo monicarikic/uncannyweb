@@ -729,11 +729,11 @@ h00c6ff: {
 
             h009cff: {
                 cmd: "text",
-                txt: "La máquina empieza a liberarse de su vínculo comparativo con los humanos y valora su esencia como sistema cognitivo independiente.\nHaz click para escuchar su mensaje.",
+                txt: "Cybernetics for the Twenty-First Century: An Interview with Philosopher Yuk Hui",
                 align: "left",
                 lines: 4,
-                url: "video3",
-                label: "Escucha a la máquina",
+                url: "https://www.e-flux.com/journal/102/282271/cybernetics-for-the-twenty-first-century-an-interview-with-philosopher-yuk-hui/",
+                label: "Tecnodiversidad",
                 point: [106, 76],
                 obstacle: true
             },
